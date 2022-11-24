@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1280 height=1080></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -55,16 +55,16 @@
         updateBannerVisibility();
       }
 
-        var buildUrl = "Stumble";
-      var loaderUrl = buildUrl + "/deathflamingo.loader.js";
+      var buildUrl = "Stumble";
+      var loaderUrl = buildUrl + "/stumble.loader.js";
       var config = {
-        dataUrl: buildUrl + "/deathflamingo.data",
-        frameworkUrl: buildUrl + "/deathflamingo.framework.js",
-        codeUrl: buildUrl + "/deathflamingo.wasm",
+        dataUrl: buildUrl + "/stumble.data.br",
+        frameworkUrl: buildUrl + "/stumble.framework.js.br",
+        codeUrl: buildUrl + "/stumble.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Lovin Studios",
         productName: "Stumble",
-        productVersion: "2.1.0",
+        productVersion: "0.1.0",
         showBanner: unityShowBanner,
       };
 
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1280px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
